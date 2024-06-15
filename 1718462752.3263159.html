@@ -1,0 +1,109 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Registration and Information Update Form</title>
+</head>
+<body>
+    <h1>Voter Registration and Information Update Form</h1>
+    <p>Please read instructions carefully. Please type or print clearly with blue or black ink. For further information, you may consult the Secretary of State's website at: <a href="https://VoteOhio.gov">VoteOhio.gov</a> or call 877-SOS-OHIO (877-767-6446).</p>
+
+    <h2>Eligibility</h2>
+    <p>You are qualified to register to vote in Ohio if you meet all the following requirements:</p>
+    <ul>
+        <li>You are a citizen of the United States.</li>
+        <li>You will be at least 18 years old on or before the day of the general election.</li>
+        <li>You will be a resident of Ohio for at least 30 days immediately before the election in which you want to vote.</li>
+        <li>You are not incarcerated (in jail or in prison) for a felony conviction.</li>
+        <li>You have not been declared incompetent for voting purposes by a probate court.</li>
+        <li>You have not been permanently disenfranchised for violations of election laws.</li>
+    </ul>
+    <p>Use this form to register to vote or to update your current Ohio registration if you have changed your address or name.</p>
+    <p><strong>NOTICE:</strong> This form must be received or postmarked by the 30th day before an election at which you intend to vote. You will be notified by your county board of elections of the location where you vote. If you do not receive a notice following timely submission of this form, please contact your county board of elections.</p>
+    <p>Please see information on back of this form to learn how to obtain an absentee ballot.</p>
+
+    <p><strong>Numbers 1 and 2 below are required by law. You must answer both of the questions for your registration to be processed.</strong></p>
+
+    <h2>Identification Requirements</h2>
+    <p>If you have a current Ohio driver's license or state ID card, you must provide that number on line 10. If you do not have an Ohio driver's license or state ID card, you must provide the last four digits of your Social Security number on line 10. If you have neither, please write "None."</p>
+
+    <h2>Residency Requirements</h2>
+    <p>Your voting residence is the location that you consider to be a permanent, not a temporary, residence. Your voting residence is the place in which your habitation is fixed and to which, whenever you are absent, you intend to return. If you do not have a fixed place of habitation, but you are a consistent or regular inhabitant of a shelter or other location to which you intend to return, you may use that shelter or other location as your residence for purposes of registering to vote. If you have questions about your specific residency circumstances, you may contact your local board of elections for further information.</p>
+
+    <h2>Your Signature</h2>
+    <p>In the area below the arrow in Box 14, please write your cursive, hand-written signature or make your legal mark, taking care that it does not touch the surrounding lines so when it is digitally imaged by your county board of elections it can effectively be used to identify your signature.</p>
+
+    <p><strong>WHOEVER COMMITS ELECTION FALSIFICATION IS GUILTY OF A FELONY OF THE FIFTH DEGREE</strong></p>
+
+    <form>
+        <fieldset>
+            <legend>I am:</legend>
+            <input type="checkbox" id="registering" name="registering" value="Registering as an Ohio voter">
+            <label for="registering">Registering as an Ohio voter</label><br>
+            <input type="checkbox" id="updating-address" name="updating-address" value="Updating my address">
+            <label for="updating-address">Updating my address</label><br>
+            <input type="checkbox" id="updating-name" name="updating-name" value="Updating my name">
+            <label for="updating-name">Updating my name</label><br><br>
+        </fieldset>
+        <p>1. Are you a U.S. citizen?<br>
+            <input type="radio" id="citizen-yes" name="citizen" value="Yes">
+            <label for="citizen-yes">Yes</label><br>
+            <input type="radio" id="citizen-no" name="citizen" value="No">
+            <label for="citizen-no">No</label>
+        </p>
+        <p>2. Will you be at least 18 years of age on or before the next general election?<br>
+            <input type="radio" id="age-yes" name="age" value="Yes">
+            <label for="age-yes">Yes</label><br>
+            <input type="radio" id="age-no" name="age" value="No">
+            <label for="age-no">No</label>
+        </p>
+        <p><strong>If you answered NO to either of the questions, do not complete this form.</strong></p>
+        <p>3. Last Name <input type="text" name="last-name" value="DAMIANO" required></p>
+        <p>First Name <input type="text" name="first-name" value="DYLAN" required></p>
+        <p>Middle Name or Initial <input type="text" name="middle-name"></p>
+        <p>Jr., II, etc. <input type="text" name="suffix"></p>
+        <p>4. House Number and Street (Enter new address if changed) <input type="text" name="house-number" value="757 WITTELSBACH DR" required></p>
+        <p>5. City or Post Office <input type="text" name="city" value="KETTERING" required></p>
+        <p>6. ZIP Code <input type="text" name="zip-code" value="45429" required></p>
+        <p>7. Additional Mailing Address (if necessary) <input type="text" name="additional-mailing-address"></p>
+        <p>8. County (where you live) <input type="text" name="county" value="MONTGOMERY" required></p>
+        <p>9. Birthdate (MM/DD/YYYY) (required) <input type="text" name="birthdate" value="08/28/2003" required></p>
+        <p>10. Ohio driver's license number, state ID card number, OR last four digits of Social Security number (one form of ID required to be listed or provided) <input type="text" name="id-number" value="VC475671" required></p>
+        <p>11. Phone Number (voluntary) <input type="text" name="phone-number" value="9373215425"></p>
+        <p>12. PREVIOUS ADDRESS IF UPDATING CURRENT REGISTRATION - Previous House Number and Street <input type="text" name="previous-address"></p>
+        <p>City, Village, Twp. <input type="text" name="previous-city"></p>
+        <p>Ward <input type="text" name="ward"></p>
+        <p>Previous City or Post Office <input type="text" name="previous-post-office"></p>
+        <p>Previous County <input type="text" name="previous-county"></p>
+        <p>Previous State <input type="text" name="previous-state" value="Ohio"></p>
+        <p>Precinct <input type="text" name="precinct"></p>
+        <p>13. CHANGE OF NAME ONLY Former Legal Name <input type="text" name="former-legal-name"></p>
+        <p>Former Signature <input type="text" name="former-signature"></p>
+        <p>14. I declare under penalty of election falsification I am a citizen of the United States, will have lived in this state for 30 days immediately preceding the next election, and will be at least 18 years of age at the time of the general election.<br>
+            Your Signature <input type="text" name="signature" required></p>
+        <p>Date (MM/DD/YYYY) <input type="text" name="date"></p>
+    </form>
+
+    <p>TO ENSURE YOUR INFORMATION IS RECEIVED, PLEASE DO THE FOLLOWING:</p>
+    <ol>
+        <li>Print this form.</li>
+        <li>Make sure all required fields are complete.</li>
+        <li>Sign and date your form.</li>
+        <li>Fold and insert your form into an envelope.</li>
+        <li>Mail your form to your county board of elections. For your county board's address please visit <a href="https://VoteOhio.gov">VoteOhio.gov/Boards</a></li>
+    </ol>
+
+    <p>If you have additional questions, please call the office of the Ohio Secretary of State at 877-SOS-OHIO (877-767-6446).</p>
+
+    <h2>HOW TO OBTAIN AN OHIO ABSENTEE BALLOT</h2>
+    <p>You are entitled to vote by absentee ballot in Ohio without providing a reason. Absentee ballot applications may be obtained from your county board of elections or from the Secretary of State online at <a href="https://VoteOhio.gov">VoteOhio.gov</a> or by phone at 877-SOS-OHIO (877-767-6446).</p>
+
+    <h2>OHIO VOTER IDENTIFICATION REQUIREMENTS</h2>
+    <p>Voters must bring photo identification to the polls in order to verify identity. Voters who do not provide identification will still be able to cast a provisional ballot pursuant to R.C. 3505.181. For more information on voter identification requirements, please visit the Secretary of State's website at <a href="https://VoteOhio.gov">VoteOhio.gov</a> or call 877-SOS-OHIO (877-767-6446).</p>
+    
+    <p><strong>WHOEVER COMMITS ELECTION FALSIFICATION IS GUILTY OF A FELONY OF THE FIFTH DEGREE.</strong></p>
+</body>
+</html>
+```

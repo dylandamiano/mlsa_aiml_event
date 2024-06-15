@@ -46,7 +46,7 @@ oai_client: OpenAI = OpenAI(api_key=_ENV["OPENAI_PLATFORM"]["KEY"])
 container_client = blob_client.get_container_client(_ENV["AI_BLOB_SERVICE"]["CONTAINERS"][0])
 f_name = f".\\sample_documents{time.time()}.pdf"
 
-container_client.upload_blob(name=f_name, data=open(".\\sample_documents\\voter_sample_reg_ocr.pdf", "rb"))
+container_client.upload_blob(name=f_name, data=open(".\\sample_documents\\cloduskills.png", "rb"))
 bytes_source=blob_client.get_blob_client(_ENV["AI_BLOB_SERVICE"]["CONTAINERS"][0], f_name).download_blob().content_as_bytes()
 res = doc_client.begin_analyze_document(
         "prebuilt-read", 
@@ -66,5 +66,6 @@ returned = oai_client.chat.completions.create(
         model="gpt-4o"
     )
 
-print(returned.choices[0].message.content)
+with open(f"{time.time()}.html", 'w') as f:
+       f.write(returned.choices[0].message.content)
 # ***************************************************** #
