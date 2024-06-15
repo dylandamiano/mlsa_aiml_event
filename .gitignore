@@ -1,4 +1,5 @@
 .env
 .venv
 keys.toml
-backends
+**/backends
+backends/*

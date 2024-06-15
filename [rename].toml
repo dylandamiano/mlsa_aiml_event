@@ -1,6 +1,6 @@
 [DOC_INTEL_SERVICE]
 URL="https://[SERVICE].cognitiveservices.azure.com/"
-KEY="39969e71730a4f58a9c3f3825414fadc"
+KEY="KEY"
 
 [AI_BLOB_SERVICE]
 URL="https://[SERVICE].blob.core.windows.net/"
